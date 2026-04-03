@@ -24,11 +24,12 @@ Each detected person is cropped and analyzed for a badge using classical compute
 
 ## 3. Pipeline Summary
 
-| Step  | Process              | Technology                      | Output                          |
-| **1** | **Frame Sampling**   | OpenCV VideoCapture             | Raw frames (every N-th frame)   |
-| **2** | **Person Detection** | YOLOv8-nano (Conf ≥ 0.4)        | Bounding boxes                  | 
-| **3** | **Badge Check**      | HSV Threshold + Contour Filter  | Staff flag (0/1) + XY Coords    |
-| **4** | **Save Results**     | Python CSV + OpenCV Image Write | `results.csv` + annotated JPEGs |
+| Step | Process | Technology | Output |
+| :--- | :--- | :--- | :--- |
+| 1 | Frame Sampling | OpenCV VideoCapture | Raw frames |
+| 2 | Person Detection | YOLOv8-nano (Conf ≥ 0.4) | Bounding boxes |
+| 3 | Badge Check | HSV Threshold + Contour Filter | Staff flag (0/1) + XY |
+| 4 | Save Results | Python CSV + OpenCV | results.csv + JPEGs |
 
 
 
